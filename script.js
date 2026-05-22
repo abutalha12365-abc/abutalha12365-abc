@@ -262,7 +262,9 @@ backToTopBtn.addEventListener('click', () => {
 });
 
 /* ---------- FOOTER YEAR ---------- */
-document.getElementById('year').textContent = new Date().getFullYear();
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+document.querySelectorAll('.year').forEach(el => el.textContent = new Date().getFullYear());
 
 /* ---------- HERO COUNTER TRIGGER ---------- */
 // Hero stats use the same counterObserver above, so no extra code needed.

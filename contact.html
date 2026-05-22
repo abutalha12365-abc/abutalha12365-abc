@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Light Upon Light Quran Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Tajawal:wght@300;400;500;700&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon"><i class="fas fa-star-and-crescent"></i></span>
+        <div class="logo-text"><span class="logo-main">Light Upon Light</span><span class="logo-sub">Quran Academy</span></div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="courses.html" class="nav-link">Courses</a></li>
+        <li><a href="why-us.html" class="nav-link">Why Us</a></li>
+        <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta-btn">Enroll Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="section-tag">Get In Touch</span>
+      <h1>Contact <span class="text-gold">&amp; Enroll</span></h1>
+      <p>We'd love to hear from you — reach out and we'll respond within 24 hours</p>
+      <div class="breadcrumb"><a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Contact</span></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section-pad">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <h3>Contact Information</h3>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div><strong>Email</strong><a href="mailto:info@lightuponlightacademy.com">info@lightuponlightacademy.com</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+            <div><strong>WhatsApp</strong><a href="https://wa.me/8801790424771" target="_blank">+880 1790-424771</a></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div><strong>Location</strong><span>Online — Serving students worldwide</span></div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div><strong>Available Hours</strong><span>Saturday – Thursday: 8am – 10pm (GMT)</span></div>
+          </div>
+
+          <!-- WhatsApp CTA -->
+          <a href="https://wa.me/8801790424771" target="_blank" class="whatsapp-cta-btn">
+            <i class="fab fa-whatsapp"></i> Chat on WhatsApp Now
+          </a>
+
+          <div class="contact-socials">
+            <span>Follow Us</span>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/ansarii.talha" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/@StudentSquare-fi3ez" target="_blank"><i class="fab fa-youtube"></i></a>
+              <a href="https://wa.me/8801790424771" target="_blank"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://t.me/" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal-right">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+              <span class="field-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+              <span class="field-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone / WhatsApp</label>
+              <input type="tel" id="phone" name="phone" placeholder="+880 1790-424771" />
+            </div>
+            <div class="form-group">
+              <label for="course">Course Interest *</label>
+              <select id="course" name="course" required>
+                <option value="">Select a course…</option>
+                <option>Tajweed Learning Course</option>
+                <option>Quran Learning Course</option>
+                <option>Islamic Studies Course</option>
+                <option>Islamic Fiqh &amp; Manners Course</option>
+                <option>Hifzul Qur'an Course</option>
+                <option>Islamic Parenting Guidance</option>
+                <option>Tafsirul Quran Course</option>
+                <option>Free Trial Class</option>
+              </select>
+              <span class="field-error" id="courseError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about yourself and your learning goals…" required></textarea>
+              <span class="field-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-gold btn-full">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i>
+              <p>JazakAllahu Khayran! Your message has been received. We'll be in touch soon, In sha'Allah.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-geo-bg"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo footer-logo"><span class="logo-icon"><i class="fas fa-star-and-crescent"></i></span><div class="logo-text"><span class="logo-main">Light Upon Light</span><span class="logo-sub">Quran Academy</span></div></a>
+          <p>Illuminating hearts through the timeless light of the Quran.</p>
+          <div class="social-icons footer-socials">
+            <a href="https://www.facebook.com/ansarii.talha" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@StudentSquare-fi3ez" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/8801790424771" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://t.me/" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+          </div>
+        </div>
+        <div class="footer-col"><h5>Quick Links</h5><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="courses.html">Courses</a></li><li><a href="why-us.html">Why Choose Us</a></li><li><a href="testimonials.html">Testimonials</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer-col"><h5>Our Courses</h5><ul><li><a href="courses.html">Tajweed Learning</a></li><li><a href="courses.html">Quran Learning</a></li><li><a href="courses.html">Islamic Studies</a></li><li><a href="courses.html">Islamic Fiqh</a></li><li><a href="courses.html">Hifzul Qur'an</a></li><li><a href="courses.html">Tafsirul Quran</a></li><li><a href="courses.html">Islamic Parenting</a></li></ul></div>
+        <div class="footer-col"><h5>Contact Us</h5><ul class="footer-contact-list"><li><i class="fas fa-envelope"></i><a href="mailto:info@lightuponlightacademy.com">info@lightuponlightacademy.com</a></li><li><i class="fab fa-whatsapp"></i><a href="https://wa.me/8801790424771">+880 1790-424771</a></li><li><i class="fas fa-globe"></i><span>Serving 30+ Countries</span></li><li><i class="fas fa-clock"></i><span>Sat–Thu: 8am–10pm GMT</span></li></ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span class="year"></span> Light Upon Light Quran Academy. All Rights Reserved.</p>
+        <p class="footer-hadith">"The best of you are those who learn the Quran and teach it." — Prophet Muhammad ﷺ</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/8801790424771" target="_blank" class="whatsapp-float"><i class="fab fa-whatsapp"></i><span class="whatsapp-tooltip">Chat with us!</span></a>
+  <button class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>
